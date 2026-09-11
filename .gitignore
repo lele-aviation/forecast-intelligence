@@ -1,19 +1,26 @@
-# Credentials — never commit these
+# Credentials — never commit
 .env
+**/.env
+
+# Data lives in Supabase, not in git
+source_data/
+reference/2026-07-15 Routes/
+*.xlsx
+*.xlsb
+*.xlsm
+*.csv
+*.csv.gz
+*.db
+*.db-journal
 
 # Python
 __pycache__/
-*.pyc
-*.pyo
-*.pyd
-.Python
+*.py[cod]
 *.egg-info/
 
-# OS
+# OS / editor
 .DS_Store
 Thumbs.db
-
-# Editor
 .vscode/
 .idea/
 *.swp
